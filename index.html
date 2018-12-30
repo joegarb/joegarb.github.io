@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Joe Garber</title>
+
     <style>
         /* http://meyerweb.com/eric/tools/css/reset/ 
            v2.0 | 20110126
@@ -54,10 +55,39 @@
             border-spacing: 0;
         }
     </style>
+
+    <link href="https://fonts.googleapis.com/css?family=Cardo|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
+            color: #333;
         }
+
+        a:link,
+        a:visited,
+        a:hover,
+        a:focus,
+        a:active {
+            color: #333;
+            text-decoration: none;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            outline: none;
+        }
+        a:link,
+        a:visited {
+            border-bottom-color: #fff;
+        }
+        a:hover,
+        a:focus {
+            border-bottom-color: #333;
+        }
+        a:active {
+            border-bottom-color: #fff;
+        }
+
         .container {
             display: flex;
             align-items: center;
@@ -65,16 +95,33 @@
             height: 80vh;
             margin-top: 20vh;
         }
-        h1 {
-            font-size: 22px;
+
+        .name {
+            font-family: 'Cardo', serif;
+            font-size: 3em;
+            font-variant: small-caps;
+            margin-bottom: 2.5rem;
+        }
+
+        .email {
             margin-bottom: 1rem;
+            padding-bottom: .4em; /* Add space between the text and underline */
+        }
+
+        .icons {
+            font-size: 2em;
         }
     </style>
 </head>
 <body>
+    
     <div class="container">
-        <h1>Joe Garber</h1>
-        <a href="mailto:hello@joegarb.com">hello@joegarb.com</a>
+        <h1 class="name">Joe Garber</h1>
+        <a href="mailto:hello@joegarb.com" class="email">hello@joegarb.com</a>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/joegarb/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/joegarb"><i class="fab fa-github-square"></i></a>
+        </div>
     </div>
 </body>
 </html>
